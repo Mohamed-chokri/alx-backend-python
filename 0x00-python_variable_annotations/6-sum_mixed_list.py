@@ -1,18 +1,14 @@
-
 #!/usr/bin/env python3
-"""
-Complex types - mixed list
-Write typed-annotated function sum_mixed_list
-takes mxd_lst integers and floats
-Returns their sum as float
-"""
-from typing import Union, List
+""" Complex types - mixed list """
+from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """
-    Typed-annotated function
-    sum_mixed_list
+    """ Type-annotated function sum_mixed_list that takes a list of
+        float and integers arguments.
+        Args:
+            mxd_lst: float and int type.
+        Return:
+            The sum as a float.
     """
     return sum(mxd_lst)
-
